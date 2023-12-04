@@ -313,9 +313,15 @@ console.log('List of cuisine foods', cuisinePlusNames);
 
 //10. Create a function that will use advanced array methods on the 'dishes' array and return the result ["Vegetarian Lasagna", "Vegetarian Falafel", "Vegetarian Chili"]
 
+function problemTen(){
 
+    let results;
+        results = dishes.filter(dishes => dishes.cuisine === "Vegetarian").map(dishes => dishes.cuisine + " " + dishes.name);
+        return results;
+}
 
-
+let vegetarianCuisineNames = problemTen();
+console.log('List of vegetarian cuisine names only', vegetarianCuisineNames);
 
 //BONUS
 
