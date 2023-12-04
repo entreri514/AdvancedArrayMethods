@@ -190,6 +190,30 @@ console.log('User selected food from problemTwo', userFavoriteFood);
 //3. Create a function that will return all dishes with the cuisine type of "Italian" and a serving size greater than 5.
 //Filter
 
+function problemThree(){
+
+let results;
+results = dishes.filter(function(el){
+    if(el.cuisine === "Italian" && el.servings > 5){
+        return true;
+    }
+    else {
+        return false;
+    }})
+
+    return results;
+}
+
+let italianServingsGreaterFive = problemThree();
+console.log('Italian cuisine with servings greater than 5', italianServingsGreaterFive);
+
+
+
+
+
+
+
+
 
 
 //4. Create a function that will return only dishes whose id number matches their serving count.
