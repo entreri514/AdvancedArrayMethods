@@ -154,10 +154,36 @@ function problemOne(){
 }
 
 let vegetarianFood = problemOne();
-console.log('vegetarian food from problemOne', vegetarianFood);
+console.log('Vegetarian food from problemOne', vegetarianFood);
 
 //2. Create a function that will prompt the user to enter a cuisine type and then return all dishes that match that type
 //Filter
+
+function problemTwo(){
+
+    let results;
+    let userChoice = prompt('Please enter your favorite cuisine: ');
+    results = dishes.filter(function(el){        
+        if(el.cuisine === userChoice){
+            return true;
+        }
+        else {
+            return false;
+        }})
+
+    return results;
+
+}
+
+let userFavoriteFood = problemTwo();
+console.log('User selected food from problemTwo', userFavoriteFood);
+
+
+
+
+
+
+
 
 
 
