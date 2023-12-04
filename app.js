@@ -178,15 +178,6 @@ function problemTwo(){
 let userFavoriteFood = problemTwo();
 console.log('User selected food from problemTwo', userFavoriteFood);
 
-
-
-
-
-
-
-
-
-
 //3. Create a function that will return all dishes with the cuisine type of "Italian" and a serving size greater than 5.
 //Filter
 
@@ -207,17 +198,26 @@ results = dishes.filter(function(el){
 let italianServingsGreaterFive = problemThree();
 console.log('Italian cuisine with servings greater than 5', italianServingsGreaterFive);
 
-
-
-
-
-
-
-
-
-
 //4. Create a function that will return only dishes whose id number matches their serving count.
 //Filter
+
+function problemFour(){
+
+    let results;
+    results = dishes.filter(function(el){
+        if(el.id === el.servings){
+            return true;
+        }
+        else {
+            return false;
+        }})
+
+    return results;
+}
+
+let idEqualsServings = problemFour();
+console.log("Id's that match servings", idEqualsServings);
+
 
 
 
